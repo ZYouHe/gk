@@ -1,3 +1,7 @@
+
+def power(base: float, exp: float) -> float:
+    """Calculate base raised to the power of exp."""
+    return base ** exp
 """A simple calculator module."""
 
 def add(a: float, b: float) -> float:
@@ -21,6 +25,7 @@ def divide(a: float, b: float) -> float:
     if b == 0:
         raise ZeroDivisionError("Cannot divide by zero")
     return a / b
+
 import math
 
 def sqrt(value: float) -> float:
@@ -28,3 +33,4 @@ def sqrt(value: float) -> float:
     if value < 0:
         raise ValueError("Cannot take square root of negative number")
     return math.sqrt(value)
+
