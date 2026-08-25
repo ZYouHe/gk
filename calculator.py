@@ -21,3 +21,10 @@ def divide(a: float, b: float) -> float:
     if b == 0:
         raise ZeroDivisionError("Cannot divide by zero")
     return a / b
+import math
+
+def sqrt(value: float) -> float:
+    """Calculate square root of a value."""
+    if value < 0:
+        raise ValueError("Cannot take square root of negative number")
+    return math.sqrt(value)
